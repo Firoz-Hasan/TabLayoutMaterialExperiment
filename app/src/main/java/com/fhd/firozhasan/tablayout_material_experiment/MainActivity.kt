@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
+import com.fhd.firozhasan.tablayout_material_experiment.fragments.FragmentFourth
+import com.fhd.firozhasan.tablayout_material_experiment.fragments.FragmentOne
+import com.fhd.firozhasan.tablayout_material_experiment.fragments.FragmentThree
+import com.fhd.firozhasan.tablayout_material_experiment.fragments.FragmentTwo
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -61,6 +65,10 @@ class MainActivity : AppCompatActivity() {
             }
             2 -> {
                 fragment = FragmentThree()
+                goToFragment(fragment)
+            }
+            3 -> {
+                fragment = FragmentFourth()
                 goToFragment(fragment)
             }
 
